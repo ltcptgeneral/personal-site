@@ -1,14 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<title>root's homepage</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/cards.css">
+		<link rel="stylesheet" href="styles/tables.css">
+		<title>About Me - Arthur Lu</title>
 		<style>
+			@media screen and (max-width: 480px) {
+				#skills-table td:nth-of-type(1):before { content: "Language"; }
+				#skills-table td:nth-of-type(2):before { content: "Experience"; }
+				#skills-table td:nth-of-type(3):before { content: "Frameworks"; }
+			}
 		</style>
 	</head>
-	<body style="background-color:white;">
-		<a href = "notes.html">root's class notes</a>
-		</br>
-		<a href = "projects.html">root's projects</a>
-  	</body>
+	<body>
+		<header>
+			<nav>
+				<a href="#mission">Mission</a>
+				<a href="#education">Education</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#interests">Interests</a>
+				<a href="#contact">Contact</a>
+				<a href="notes.html">Notes</a>
+			</nav>
+		</header>
+		<main>
+			<div class="card">
+				<picture>
+					<source media="screen and (min-width: 480px)" srcset="images/photo_200px.webp">
+					<source media="screen and (min-width: 0px)" srcset="images/photo_100px.webp">
+					<img src="images/photo.webp" alt="A portrait photo of Arthur Lu" style="border-radius: 20px;">
+				</picture>
+				<div>
+					<h1>Arthur Lu</h1>
+					<ul style="font-size: 2rem; list-style-type: none; padding: 0px;">
+						<li>Developer</li>
+						<li>Engineer</li>
+						<li>Problem Solver</li>
+					</ul>
+				</div>
+			</div>
+			<div class="single" id="mission">
+				<h2>My Mission</h2>
+				<p>I am a 3rd year <strong>Computer Engineering</strong> major at the University of California San Diego looking for opportunites in software development and system design.</p>
+			</div>
+			<div class="single" id="education">
+				<h2>My Education</h2>
+				<p>3rd year Computer Engineering Major at UCSD</p>
+				<p>GPA: 3.9</p>
+			</div>
+			<div class="card" id="skills">
+				<div>
+					<h2>My Languages and Skills</h2>
+				</div>
+				<div>
+					<table id="skills-table" class="labeled">
+						<colgroup>
+							<col span="1">
+							<col span="2">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Language</th>
+								<th>Experience</th>
+								<th>Frameworks</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>C/C++</td>
+								<td>2 Years</td>
+								<td>gcc, make, Visual Studio</td>
+							</tr>
+							<tr>
+								<td>Java</td>
+								<td>4 Years</td>
+								<td>Android Studio</td>
+							</tr>
+							<tr>
+								<td>Python</td>
+								<td>5 Years</td>
+								<td>PyTorch, scipy, numpy, scikit-learn</td>
+							</tr>
+							<tr>
+								<td>Javascript</td>
+								<td>1 Year</td>
+								<td>ES6, NodeJS, express.js</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>I also have experience with common technologies like Docker, lxc, nginx, and VMWare ESXi.</p>
+				</div>
+			</div>
+			<div class="card" id="projects">
+				<div>
+					<h2>My Projects</h2>
+				</div>
+				<div>
+					<a href="projects.html">Browse</a>
+				</div>
+			</div>
+			<div class="single" id="interests">
+				<h2>My Interests</h2>
+				<p>I am interested in Machine Learning, cloud technologies, and distributed computing.</p>
+			</div>
+			<div class="card" id="contact">
+				<div>
+					<h2>Contact Me</h2>
+				</div>
+				<div>
+					<table id="skills-table-wide">
+						<colgroup>
+							<col span="1">
+							<col span="2">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td>Email</td>
+								<td><a href="mainto:root@tronnet.net">root@tronnet.net</a></td>
+							</tr>
+							<tr>
+								<td>GitHub</td>
+								<td><a href="https://github.com/ltcptgeneral">ltcptgeneral</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+		<footer>&copy; 2023 - Arthur Lu</footer>
+	</body>
 </html>

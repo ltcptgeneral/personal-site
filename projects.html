@@ -2,20 +2,32 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>root's projects</title>
-		<style>
-		</style>
+		<meta name="viewport" content="width=device-width">
+		<title>My Projects - Arthur Lu</title>
+		<link rel="stylesheet" href="styles/styles.css" type="text/css">
+		<link rel="stylesheet" href="styles/projects.css" type="text/css">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+		<script src="scripts/projects.js" type="module"></script>
 	</head>
-	<body style="background-color:white;">
-		<a href = "index.html">return to root's homepage</a>
-		<p>FRC</p>
-		<ul>
-			<li><a href = "https://github.com/titanscouting/tra-analysis">tra-analysis</a></li>
-			<li><a href = "https://github.com/titanscouting/tra-superscript">tra-superscript</a></li>
-		</ul>
-		<p>ECE 45</p>
-		<ul>
-			<li><a href = "https://github.com/ltcptgeneral/ece45-project">ECE 45 Final Project</a></li>
-		</ul>
+	<body>
+		<header>
+			<h1 styles="margin: 10px;">My Projects</h1>
+			<nav>				
+				<a href="index.html">Go Back</a>
+			</nav>
+		</header>
+		<main>
+			<div class="flexbox" id="projects">
+			</div>
+		</main>
+		<footer>&copy; 2023 - Arthur Lu</footer>
+		<template id="project-article">
+			<article>
+				<h2 id="project-name"></h2>
+				<p id="project-desc"></p>
+				<p id="project-lang"></p>
+			</article>
+		</template>
 	</body>
+	<footer>&copy; 2023 - Arthur Lu</footer>
 </html>
