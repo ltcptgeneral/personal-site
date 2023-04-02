@@ -7,6 +7,7 @@ Cards alternate style from flat to popped out
 :root {
 	--card-bg-color: #222222;
 	--card-text-color: white;
+	--link-text-color: #AAAAFF;
 }
 
 .single {
@@ -74,4 +75,13 @@ Cards alternate style from flat to popped out
 }
 .card[data-reverse] {
 	flex-direction: column-reverse;
+}
+.card a {
+	font-size: large;
+	color: var(--accent-text-color);
+	text-decoration: underline 0.1em var(--card-bg-color);
+	transition: text-decoration-color 500ms;
+}
+.card a:hover {
+	text-decoration: underline 0.1em var(--link-text-color);
 }
