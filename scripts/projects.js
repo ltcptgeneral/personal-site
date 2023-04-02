@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", init);
 async function init () {
 	const octokit = new Octokit()
 
-	let repos = await octokit.request('GET /users/ltcptgeneral/repos', {
+	let repos = await octokit.request('GET /users/ltcptgeneral/starred', {
 		username: 'ltcptgeneral'
 	});
 
