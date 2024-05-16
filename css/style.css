@@ -1,0 +1,39 @@
+html {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, label, button, input, select, td {
+	font-family: monospace;
+}
+
+body {
+	margin-left: 16px;
+	margin-right: 16px;
+	width: calc(100% - 16px - 16px);
+}
+
+header {
+	margin-top: 50px;
+	text-align: center;
+}
+
+h1 a {
+	text-decoration: none;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	column-gap: 4ch;
+	justify-content: center;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: larger;
+}
+
+main {
+	text-align: center;
+}
