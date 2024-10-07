@@ -12,22 +12,19 @@
 
 .overlay-container .overlay-mask {
 	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	inset: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0);
-	color: rgba(0, 0, 0, 0);
+	background-color: rgb(0 0 0 / 0%);
+	color: rgb(0 0 0 / 0%);
 	transition-property: color, background-color;
 	transition-duration: 0.25s, 0.25s;
 	transition-timing-function: ease-in-out;
 }
 
 .overlay-container:hover .overlay-mask {
-	background-color: rgba(0, 0, 0, 0.7);
-	color: rgba(255, 255, 255, 1);
+	background-color: rgb(0 0 0 / 70%);
+	color: rgb(255 255 255 / 100%);
 }
 
 .overlay-container .overlay-content {

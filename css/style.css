@@ -29,8 +29,7 @@ h1 a {
 
 nav {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-flow: row nowrap;
 	column-gap: 4ch;
 	justify-content: center;
 }

@@ -1,7 +1,7 @@
 class ModalImage extends HTMLElement {
-	#src = null
-	#alt = null
-	#imgElem = null
+	#src = null;
+	#alt = null;
+	#imgElem = null;
 	constructor () {
 		super();
 		this.attachShadow({ mode: "open" });
@@ -36,10 +36,10 @@ class ModalImage extends HTMLElement {
 			<img>
 		`;
 		this.#imgElem = this.shadowRoot.querySelector("img");
-		this.#imgElem.onclick = this.modalZoom.bind(this); 
+		this.#imgElem.onclick = this.modalZoom.bind(this);
 	}
 
-	connectedCallback() {
+	connectedCallback () {
 		const src = this.getAttribute("src");
 		const alt = this.getAttribute("alt");
 		this.#src = src;
@@ -55,15 +55,15 @@ class ModalImage extends HTMLElement {
 				<button id="close">&times;</button>
 				<img src="${this.#src}" alt="${this.#alt}">
 				<div>${this.#alt}</div>
-			<div>	
+			<div>
 		`;
 		this.shadowRoot.appendChild(modalBox);
 		modalBox.showModal();
 		modalBox.querySelector("#close").onclick = (e) => {
 			e.preventDefault();
 			modalBox.close();
-			modalBox.parentElement.removeChild(modalBox)
-		}
+			modalBox.parentElement.removeChild(modalBox);
+		};
 	}
 }
 
