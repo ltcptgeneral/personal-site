@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Photography - Arthur Lu</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/overlay.css" type="text/css">
+		<link rel="icon" type="image/x-icon" href="resources/icon/favicon.svg">
+		<style>
+			#galleries-container {
+				display: grid;
+				grid-template-columns: auto auto;
+				column-gap: 16px;
+				row-gap: 16px;
+				margin-top: 1em;
+				margin-bottom: 1em;
+			}
+			.gallery {
+				max-width: 100%;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><b><a aria-label="Arthur Lu" href="https://root.tronnet.net" class="site-header">ARTHUR LU</a></b></h1>
+			<nav>
+				<a aria-label="Projects" href="index.html">PROJECTS</a>
+				<a aria-current="page" aria-label="Photography" href="photography.html">PHOTOGRAPHY</a>
+				<a aria-label="About Me" href="about.html">ABOUT ME</a>
+				<a aria-label="Notes" href="notes.html">CLASS NOTES</a>
+			</nav>
+		</header>
+		<main>
+            <div id="galleries-container">
+                <figure class="overlay-container gallery">
+                    <img src="resources/photography/nature/1.jpg" alt="" class="image">
+                    <figcaption class="overlay-mask">
+                        <a href="photography/nature.html" class="overlay-content">
+                            <h2>Nature</h2>
+                            <p>Classical nature photography.</p>
+                        </a>
+                    </figcaption>
+                </figure>
+                <figure class="overlay-container gallery">
+                    <img src="resources/photography/nature2/1.jpg" alt="" class="image">
+                    <figcaption class="overlay-mask">
+                        <a href="photography/nature2.html" class="overlay-content">
+                            <h2>Nature 2</h2>
+                            <p>If nature is so good, why isn't there nature 2?</p>
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>
