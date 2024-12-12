@@ -29,7 +29,9 @@ class ModalImage extends HTMLElement {
 					cursor: pointer;
 				}
 				img {
+					min-width: 100%;
 					max-width: 100%;
+					min-height: 100%;
 					max-height: 100%;
 				}
 			</style>
@@ -40,11 +42,12 @@ class ModalImage extends HTMLElement {
 	}
 
 	connectedCallback () {
+		const thumbnail = this.getAttribute("thumb")
 		const src = this.getAttribute("src");
 		const alt = this.getAttribute("alt");
 		this.#src = src;
 		this.#alt = alt;
-		this.#imgElem.src = src;
+		this.#imgElem.src = thumbnail;
 		this.#imgElem.alt = alt;
 	}
 

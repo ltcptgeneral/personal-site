@@ -7,23 +7,9 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="/css/style.css" type="text/css">
 		<link rel="stylesheet" href="/css/overlay.css" type="text/css">
+		<link rel="stylesheet" href="/css/gallery.css" type="text/css">
 		<link rel="icon" type="image/x-icon" href="/resources/icon/favicon.svg">
 		<script src="/scripts/ModalImage.js" type="module"></script>
-		<style>
-			#gallery-container {
-				display: grid;
-				grid-template-columns: auto auto;
-				column-gap: 16px;
-				row-gap: 16px;
-				margin-top: 1em;
-				margin-bottom: 1em;
-			}
-			#gallery-container modal-image {
-				max-width: 100%;
-				margin-left: auto;
-				margin-right: auto;
-			}
-		</style>
 	</head>
 	<body>
 		<header>
@@ -37,12 +23,12 @@
 		</header>
 		<main>
 			<div id="gallery-container">
-				<modal-image class="photo" src="/resources/photography/nature2/1.jpg" alt=""></modal-image>
-				<modal-image class="photo" src="/resources/photography/nature2/2.jpg" alt=""></modal-image>
-				<modal-image class="photo" src="/resources/photography/nature2/3.jpg" alt=""></modal-image>
-				<modal-image class="photo" src="/resources/photography/nature2/4.jpg" alt=""></modal-image>
-				<modal-image class="photo" src="/resources/photography/nature2/5.jpg" alt=""></modal-image>
-				<modal-image class="photo" src="/resources/photography/nature2/6.jpg" alt=""></modal-image>
+				<modal-image class="photo" thumb="/resources/photography/nature2/1-thumb.jpg" src="/resources/photography/nature2/1.jpg" alt=""></modal-image>
+				<modal-image class="photo" thumb="/resources/photography/nature2/2-thumb.jpg" src="/resources/photography/nature2/2.jpg" alt=""></modal-image>
+				<modal-image class="photo" thumb="/resources/photography/nature2/3-thumb.jpg" src="/resources/photography/nature2/3.jpg" alt=""></modal-image>
+				<modal-image class="photo" thumb="/resources/photography/nature2/4-thumb.jpg" src="/resources/photography/nature2/4.jpg" alt=""></modal-image>
+				<modal-image class="photo" thumb="/resources/photography/nature2/5-thumb.jpg" src="/resources/photography/nature2/5.jpg" alt=""></modal-image>
+				<modal-image class="photo" thumb="/resources/photography/nature2/6-thumb.jpg" src="/resources/photography/nature2/6.jpg" alt=""></modal-image>
 			</div>
 		</main>
 		<footer>
