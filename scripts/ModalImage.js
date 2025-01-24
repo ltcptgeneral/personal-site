@@ -42,7 +42,7 @@ class ModalImage extends HTMLElement {
 	}
 
 	connectedCallback () {
-		const thumbnail = this.getAttribute("thumb")
+		const thumbnail = this.getAttribute("thumb");
 		const src = this.getAttribute("src");
 		const alt = this.getAttribute("alt");
 		this.#src = src;
