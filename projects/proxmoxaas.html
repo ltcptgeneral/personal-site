@@ -8,13 +8,6 @@
 		<link rel="stylesheet" href="/css/style.css" type="text/css">
 		<link rel="stylesheet" href="/css/overlay.css" type="text/css">
 		<link rel="icon" type="image/x-icon" href="/resources/icon/favicon.svg">
-		<style>
-			.project {
-				max-width: 1080px;
-				margin-left: auto;
-				margin-right: auto;
-			}
-		</style>
 	</head>
 	<body>
 		<header>
@@ -28,6 +21,22 @@
 		</header>
 		<main>
 			<h2>ProxmoxAAS</h2>
+			<p>ProxmoxAAS extends the Proxmox Virtual Environment project with additional MaaS features. Through the secure privilege-elevation API, non-administrator users can manage their VM or container instances. The API allows administrator users to set resource quota limits for individual users and groups. A simplified user interface provides users with power management, console access, and instance configuration utility. Finally, optional user management utilities for LDAP allow for a simplified user management interface for administrators. Combining all the ProxmoxAAS tools, cluster owners can provide a compute-on-demand service to users.</p>
+			<hr>
+
+			<h3>Dashboard</h3>
+			<p>The front-end dashboard simplifies the user experience while providing functionality for instance power management, configuration management, and console access. It is written in native JS and relies on only 2 external libraries for better latency and performance. The interface is simple and designed with accessibility first.</p>
+			<hr>
+
+			<h3>API</h3>
+			<p>Express.js REST API provides all the functionality of ProxmoxAAS requiring privilege-elevation. Through this API, users can securely manage their instances' CPU, memory, disk, and PCIe devices without needing Proxmox administrator privileges. It also allows administrators to set resource quota limits. The API heavily leverages the built-in Proxmox REST API as its trusted base of knowledge. For each privileged operation, the API performs a series of checks on the user, instance, and remaining resources to determine if the operation should be allowed and elevated privilege is granted.  It also supports any number of additional backends conforming to a well-defined interface. This allows the API's functionality to be extended with more functionality.</p>
+			<hr>
+
+			<h3>LDAP</h3>
+			<p>An optional module that implements a simple REST API on top of LDAP for managing users and groups of ProxmoxAAS. The LDAP organization is simplified to a user OU and group OU, which simplifies user and group properties. The API can be used by administrators to quickly add and modify users, groups, manage group assignments, or delete them. It also integrates with other parts of ProxmoxAAS which interact with user and group information such as account management in the dashboard and group membership checks in the primary API.</p>
+			<hr>
+
+			Want to learn more about this project? Reference the project repository <a href="git.tronnet.net/tronnet/ProxmoxAAS-Dashboard">here</a>.
 		</main>
 		<footer>
 		</footer>

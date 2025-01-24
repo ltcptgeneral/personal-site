@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Projects - Arthur Lu</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="/css/style.css" type="text/css">
+		<link rel="stylesheet" href="/css/overlay.css" type="text/css">
+		<link rel="icon" type="image/x-icon" href="/resources/icon/favicon.svg">
+	</head>
+	<body>
+		<header>
+			<h1><b><a aria-label="Arthur Lu" href="https://root.tronnet.net" class="site-header">ARTHUR LU</a></b></h1>
+			<nav>
+				<a aria-current="page" aria-label="Projects" href="/index.html">PROJECTS</a>
+				<a aria-label="Photography" href="/photography.html">PHOTOGRAPHY</a>
+				<a aria-label="About Me" href="/about.html">ABOUT ME</a>
+				<a aria-label="Notes" href="/notes.html">CLASS NOTES</a>
+			</nav>
+		</header>
+        <main>
+			<h2>Pico-BMC</h2>
+			<p>PicoBMC adds simple remote power management to any computer. Unlike the PiKVM and nanoKVM projects, the PicoBMC project does not implement full KVM features (yet!) but costs less, is significantly smaller, and consumes less power. It uses the RaspberryPi Pico and the firmware is written in C++ using the Pico SDK and LWIP library for HTTP support. Users can make HTTP requests to the BMC to perform power on/off remotely and monitor the computer's power status.</p>
+			<hr>
+
+			<h3>Hardware</h3>
+			<p>PicoBMC is built on the RaspberryPi Pico W microcontroller. It also uses few simple circuits to perform the remote power switch and power monitoring. It requires few additional hardware to be fully functional.</p>
+			<hr>
+
+			<h3>Firmware</h3>
+			<p>The firmware uses the Pico SDK and LWIP to implement the HTTP server interface. This was choosen for the low overhead and potential for additional features in the future.</p>
+			<hr>
+
+			Want to learn more about this project? Reference the project repository <a href="https://git.tronnet.net/tronnet/pico-bmc">here</a>.
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>
