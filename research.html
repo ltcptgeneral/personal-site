@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Research - Arthur Lu</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="/css/style.css" type="text/css">
+		<link rel="stylesheet" href="/css/overlay.css" type="text/css">
+		<link rel="icon" type="image/x-icon" href="/resources/icon/favicon.svg">
+		<style>
+			.overlay-container .overlay-content {
+				text-align: left;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: left;
+			}
+			.research p.abstract{
+				margin-left: 32px;
+				font-size: medium;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><b><a aria-label="Arthur Lu" href="/" class="site-header">ARTHUR LU</a></b></h1>
+			<nav>
+				<a aria-label="Projects" href="/index.html">PROJECTS</a>
+				<a aria-current="page" aria-label="Research" href="/research.html">RESEARCH</a>
+				<a aria-label="Photography" href="/photography.html">PHOTOGRAPHY</a>
+				<a aria-label="About Me" href="/about.html">ABOUT ME</a>
+				<a aria-label="Notes" href="/notes.html">CLASS NOTES</a>
+			</nav>
+		</header>
+		<main>
+			<div class="overlay-container research">
+				<a class="overlay-content" href="/research/Lu_Li_PIR_Search_Using_Hyperbolic_Text_Embeddings.pdf">
+					<h2>PIR Search Using Hyperbolic Text Embeddings</h2>
+				</a>
+				<p>
+					Arthur Lu, Shufan Li
+				</p>
+				<p class="abstract">
+					Private Information retrieval (PIR) schemes  such as SimplePIR allow users to privately fetch entries from a public database in an obvious manner. Building on top of PIR, more complex systems such as Coeus and Tiptoe has achieved oblivious document ranking and retrieval. While effective and useful, existing systems only support ranking by cosine similarity of embeddings in euclidean space. Hyperbolic embeddings have recently shown promising results in a wide range of applications such as hierarchical representation and source code search. In this work, we explore the porblem of oblivious document ranking and retrieval based on hyperbolic embeddings. One of the key challenge  is the complex, highly-non-linear nature of the hyperbolic distance function, which are to compute naively using existing schemes. To address this problem, we derived an equivalent, simpler surrogate metric which always yield the same ranking as the  hyperbolic distance metric, as well as a scheme to compute this metric in an oblivious manner. Experiment results show that the proposed scheme is correct and achieves better performance thanks to multithreaded optimizations and usage of specialized hardwares such as GPUs.
+				</p>
+			</div>
+			<div class="overlay-container research">
+				<a class="overlay-content" href="/research/Manvattira_etal_Automated_Grammar_Generation_Using_LLMs.pdf">
+					<h2>Automated Grammar Generation Using LLMs</h2>
+				</a>
+				<p>
+					Aman Ganapathy Manvattira, Annaelle Baiget, Arthur Lu, Emmett Cocke, Krish Patel, James Shiffer
+				</p>
+				<p class="abstract">
+					Large language models (LLMs) have a high potential for processing highly structured text inputs to generate grammar representations. Leveraging LLMs in generating grammar would reduce the time spent and effort required to create a grammar for fuzzing, unit testing, and input validation. In this project, we create a system that handles grammar creation using automated feedback and human feedback. We develop a pipeline for assisted generation of grammar on unseen domains. We show the potential for LLMs to generate complex grammars which can be used for many software testing applications and reflect on its limitations with complex unseen domains. 
+				</p>
+			</div>
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>
